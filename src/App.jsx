@@ -1,4 +1,5 @@
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from "./components/Navbar";
 import Home from './pages/Home';
 import Animales from './pages/Animales';
 import Protectoras from './pages/Protectoras';
@@ -6,9 +7,7 @@ import Protectoras from './pages/Protectoras';
 export default function App() {
   return (
     <>
-      <nav>
-        <Link to="/">Inicio</Link> | <Link to="/animales">Animales</Link> | <Link to="/protectoras">Protectoras</Link>
-      </nav>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/animales" element={<Animales />} />
