@@ -1,7 +1,5 @@
-import { Routes, Route, Link } from 'react-router-dom';
-import Home from './pages/Home';
-import Animales from './pages/Animales';
-import Protectoras from './pages/Protectoras';
+import { Link } from 'react-router-dom';
+import AppRoutes from './routes';
 
 export default function App() {
   return (
@@ -9,11 +7,7 @@ export default function App() {
       <nav>
         <Link to="/">Inicio</Link> | <Link to="/animales">Animales</Link> | <Link to="/protectoras">Protectoras</Link>
       </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/animales" element={<Animales />} />
-        <Route path="/protectoras" element={<Protectoras />} />
-      </Routes>
+      <AppRoutes />
     </>
   );
 }
