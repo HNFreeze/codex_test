@@ -1,18 +1,21 @@
-import { Routes, Route } from 'react-router-dom';
-import Navbar from "./components/Navbar";
-import Home from './pages/Home';
-import Animales from './pages/Animales';
-import Protectoras from './pages/Protectoras';
+
 
 export default function App() {
   return (
     <>
+ codex/crear-componente-navbar.jsx-con-enlaces
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/animales" element={<Animales />} />
         <Route path="/protectoras" element={<Protectoras />} />
       </Routes>
+
+      <nav>
+        <Link to="/">Inicio</Link> | <Link to="/animales">Animales</Link> | <Link to="/protectoras">Protectoras</Link>
+      </nav>
+      <AppRoutes />
+ main
     </>
   );
 }
