@@ -1,0 +1,1 @@
+export default function ProtectoraForm() { return <div>Formulario de protectora</div>; }

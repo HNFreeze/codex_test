@@ -1,0 +1,1 @@
+export default function AnimalCard() { return <div>Animal Card</div>; }

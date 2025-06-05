@@ -1,0 +1,1 @@
+export default function Protectoras() { return <h2>Gestión de protectoras</h2>; }

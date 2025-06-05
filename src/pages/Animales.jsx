@@ -1,0 +1,1 @@
+export default function Animales() { return <h2>Lista de animales disponibles para adopción</h2>; }
